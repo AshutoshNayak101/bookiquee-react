@@ -1,19 +1,35 @@
-# BOOKIQUEE React Application
+# BOOKIQUEE React Application 📚
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://bookique.vercel.app)
+
+🔗 Live Demo: https://bookique.vercel.app
 
 A modern React-based book discovery and reading application with Firebase authentication and book reader functionality.
 
-## Features
+---
 
-✨ **Full Functionality Preserved:**
-- User authentication (Email/Password and Google Sign-In)
-- Browse and search books (12 books per page)
-- Sort books (Popular, Recent, Top Rated)
-- Book details modal with descriptions
-- Full-featured book reader with pagination and table of contents
-- Add books to favorites
-- Responsive design
+## ✨ Features
 
-## Project Structure
+- 🔐 Authentication (Email + Google)
+- 📚 Browse & Search Books
+- 🔎 Sorting (Popular, Recent, Top Rated)
+- 📖 Book Reader with pagination & chapters
+- ❤️ Favorites system
+- 📱 Fully responsive design
+
+---
+
+## 🛠 Tech Stack
+
+- React 18
+- React Router v6
+- Firebase
+- Vite
+- CSS3
+
+---
+
+## 📁 Project Structure
 
 ```
 bookiquee-react/
