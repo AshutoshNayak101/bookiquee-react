@@ -185,7 +185,7 @@ Do not commit `.env` files containing real credentials.
 ## Security Best Practices
 
 - Never hardcode secrets in source files.
-- Keep production credentials in platform secret managers (for example Vercel environment variables).
+- Keep production credentials in platform secret managers, for example Vercel environment variables.
 - Rotate Firebase keys if they were previously exposed.
 
 ## Styling

@@ -4,7 +4,7 @@ import 'firebase/auth';
 const getRequiredEnvVar = (key) => {
   const value = import.meta.env[key];
 
-  if (!value) {
+  if (!value || value.trim() === '') {
     throw new Error(`[Firebase Config] Missing required environment variable: ${key}`);
   }
 
