@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pink: #e9136e;
+  --pink2: #f5457e;
+  --dark-pink: #c0105a;
+  --light-bg: #f0eeff;
+  --purple-bg: #dcd6f7;
+  --white: #ffffff;
+  --gray: #f3f3f3;
+  --light-gray: #f9f9f9;
+  --text: #444;
+  --text-light: #999;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, var(--light-bg) 0%, var(--purple-bg) 100%);
+  color: var(--text);
+}
+
+#root {
+  height: 100%;
+}
