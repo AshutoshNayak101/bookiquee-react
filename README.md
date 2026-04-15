@@ -2,7 +2,7 @@
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://bookiquee.vercel.app/login)
 
-🔗 Live Demo: https://bookique.vercel.app
+🔗 Live Demo: https://bookiquee.vercel.app/login
 
 A modern React-based book discovery and reading application with Firebase authentication and book reader functionality.
 
