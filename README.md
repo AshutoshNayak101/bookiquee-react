@@ -79,6 +79,26 @@ bookiquee-react/
    npm install
    ```
 
+## Environment Variables
+
+Firebase credentials are loaded from environment variables and are **not** stored in the repository.
+
+1. Create a local environment file:
+   ```bash
+   cp .env.example .env.local
+   ```
+2. Set values for:
+   - `VITE_FIREBASE_API_KEY`
+   - `VITE_FIREBASE_AUTH_DOMAIN`
+   - `VITE_FIREBASE_PROJECT_ID`
+   - `VITE_FIREBASE_STORAGE_BUCKET`
+   - `VITE_FIREBASE_MESSAGING_SENDER_ID`
+   - `VITE_FIREBASE_APP_ID`
+   - `VITE_FIREBASE_MEASUREMENT_ID` (optional)
+3. Restart the dev server after changing environment variables.
+
+If required variables are missing, the app fails fast during Firebase initialization with a clear error message.
+
 ## Running the Application
 
 ### Development Mode
@@ -148,10 +168,25 @@ const API_BASE_URL = "http://localhost:8080/api";
 
 ## Authentication
 
-Firebase configuration is stored in `src/services/firebaseConfig.js`. The app uses:
+Firebase configuration is read from `import.meta.env.VITE_*` variables in `src/services/firebaseConfig.js`. The app uses:
 - Email authentication
 - Google OAuth
 - Local token storage with expiration checking
+
+## Deployment (Vercel)
+
+1. Open your Vercel project settings.
+2. Go to **Settings → Environment Variables**.
+3. Add the same `VITE_FIREBASE_*` variables from `.env.local`.
+4. Redeploy the app.
+
+Do not commit `.env` files containing real credentials.
+
+## Security Best Practices
+
+- Never hardcode secrets in source files.
+- Keep production credentials in platform secret managers (for example Vercel environment variables).
+- Rotate Firebase keys if they were previously exposed.
 
 ## Styling
 
