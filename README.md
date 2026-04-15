@@ -1,6 +1,6 @@
 # BOOKIQUEE React Application 📚
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://bookique.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://bookiquee.vercel.app/login)
 
 🔗 Live Demo: https://bookique.vercel.app
 
